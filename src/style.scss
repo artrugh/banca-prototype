@@ -1,0 +1,54 @@
+@import '/components/styles/variables.scss';
+// COMPONENTS
+@import './components/styles/Cursor.scss';
+@import './components/styles/Header.scss';
+@import './components/styles/Nav.scss';
+@import './components/styles/Slider.scss';
+@import './components/styles/Cart.scss';
+@import './components/styles/Empresa.scss';
+@import './components/styles/Launch.scss';
+@import './components/styles/Testimony.scss';
+@import './components/styles/Contacto.scss';
+@import './components/styles/Tienda.scss';
+@import './components/styles/Footer.scss';
+
+* {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'PT Sans', "Trebuchet MS", Helvetica, sans-serif;
+    // font-family: Raleway, sans-serif;
+    word-spacing: 0.05em;
+    letter-spacing: 0.05em;
+    line-height: 1.6em;
+    font-weight: 100;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: black;
+    // cursor: url("http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur");
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    display: none;
+}
+
+.matt {
+    opacity: 1;
+    transition: opacity 0.6s ease-out;
+}
+
+.transparent {
+    opacity: 0.2;
+    transition: opacity 0.6s ease-out;
+    cursor: url('https://img.icons8.com/ios/50/ffffff/delete-sign.png'), auto;
+    
+}

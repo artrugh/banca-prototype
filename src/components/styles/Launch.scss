@@ -1,0 +1,30 @@
+#launch {
+    // margin: 3% 7%;
+    padding: 56.25% 0 0 0;
+    position: relative;
+    margin-top: 50px;
+
+    .frame {
+        position: absolute;
+        top: 0em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.video {
+    padding: 0 1em 0 0;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: $gold-font;
+    width: 100%;
+    height: 2em;
+
+    .video-link {
+        padding-right: 2em;
+        float: right;
+        color: $gold-font;
+        text-decoration: none;
+    }
+}

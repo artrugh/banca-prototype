@@ -1,0 +1,23 @@
+#empresa {
+    padding: 10em 3em 3em 3em;
+    // padding-bottom: 0;
+    background: linear-gradient(#1f1f1f 60%, black );
+    // height: 90vh;
+
+    @media screen and (min-device-width:500px) {
+        padding: 10em;
+    }
+
+    .statement {
+        // background-color: $black-menu;
+        text-align: justify;
+        color: $white-grey;
+        line-height: 2.3em;
+        // word-spacing: 0.01em;
+        letter-spacing: 0.3em;
+        font-size: 0.8em;
+        @media screen and (min-device-width:500px) {
+            font-size: 1.3em;
+        }
+    }
+}

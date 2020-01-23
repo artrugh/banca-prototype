@@ -1,0 +1,31 @@
+//FONTS
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+@import url(https://fonts.googleapis.com/css?family=Catamaran|Passion+One&display=swap);
+
+//MEDIA QUERY
+
+$breakpoint-mobile: 450px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1300px;
+
+//COLOR VARIABLES
+
+$black-back: #151515;
+$black-select: #1a1a1a;
+$black-menu: #1f1f1f;
+$white-grey: #ececec;
+$white: #f6f6f6;
+$purple: #77111f;
+$gold-font: #a18a57;
+$gold-lighten: #96855f;
+$golden-darken: #b19863;
+$yellow: #e4d04d;
+
+//FUNCTIONS
+$text-shadow: 5px 5px 5px $gold-lighten,
+0 0 1em $purple,
+0 0 1em $purple;
+
+$font: Raleway,
+sans-serif;

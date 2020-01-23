@@ -1,0 +1,19 @@
+#cursor {
+    width: 30px;
+    position: absolute;
+
+    .st0 {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-width: 6;
+        stroke-miterlimit: 10;
+    }
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}

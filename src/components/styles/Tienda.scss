@@ -1,0 +1,100 @@
+#tienda {
+    padding-top: 9em;
+    padding-bottom: 1em;
+    margin: 6em;
+
+    @media (min-device-width: $breakpoint-tablet) {
+        padding-top: 5em;
+    }
+
+    h3 {
+        margin-top: 4em;
+        color: $white;
+        text-align: start;
+        padding-bottom: 0.8em;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) -10%, rgba(255, 255, 255, 100.9));
+        border-image-slice: 1;
+    }
+
+    .producto {
+        margin: 3em 0;
+
+        @media (min-device-width: $breakpoint-tablet) {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            margin-bottom: 2em;
+        }
+
+        .img-product {
+            background-position: center;
+            // background-size: cover 100px;
+            min-height: 320px;
+
+            @media (max-device-width: $breakpoint-tablet) {
+                margin-bottom: 70px;
+            }
+        }
+
+        .description {
+            display: block;
+            font-size: 2.1em;
+            text-align: justify;
+            background-color: $black-menu;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (min-device-width: $breakpoint-tablet) {
+                margin-top: 3em;
+                font-size: 1.1em;
+            }
+
+            p {
+                color: $golden-darken;
+            }
+
+            .product-details {
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 1.6em;
+                .price {
+                    color: $white-grey;
+                    font-size: 1.2em;
+                }
+                .fa-w-20 {
+                    color: $black-menu;
+                    font-size: 1.2em;
+
+                    &:hover {
+                        text-shadow: $text-shadow;
+                        // color: $golden-darken;
+                        transition: 0.3s;
+                    }
+                }
+
+                .add-cart {
+                    padding: 30px 40px;
+                    background-color: $golden-darken;
+                    color: $black-menu;
+                    font-size: 1.1em;
+                    cursor: pointer;
+                    
+                    @media (min-device-width: 500px) {
+                        font-size: 1em;
+                        padding: 25px 30px;
+                    }
+                    @media (min-device-width: 700px) {
+                        font-size: 1.2em;
+                        padding: 20px 25px;
+                    }
+                    &:hover{
+                        background-color:  $white-grey;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+#contacto {
+    padding-top: 7em;
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#signform,
+#logform {
+    width: 90vw;
+    display: none;
+    padding-top: 1em;
+    font-size: 3em;
+
+    @media screen and (min-device-width:500px) {
+        width: 400px;
+        margin: 0 2em;
+        padding-top: 5em;
+        font-size: 1.2em;
+    }
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    #contact-form {
+        width: 100%;
+        padding-top: 2em;
+        font-size: 3em;
+
+        @media screen and (min-device-width:500px) {
+            width: 350px;
+            margin: 0 2em;
+            font-size: 1.5em;
+        }
+    }
+
+    .container,
+    .container-form-sign {
+        width: 100%;
+        background-color: $black-menu;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .contact-title {
+            color: $golden-darken;
+            padding-bottom: 2.5em;
+        }
+
+        .button {
+            width: 70%;
+            font-size: 0.9em;
+            margin-bottom: 40px;
+            color: $black-menu;
+            background-color: $golden-darken;
+            padding: 5px 10px;
+            border: none;
+            display: flex;
+            justify-content: center;
+
+            @media screen and (min-device-width:500px) {
+                width: 200px;
+                font-size: 1.2em;
+            }
+
+            &:hover{
+                background-color:  $white-grey;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            .svg-inline--fa {
+                padding-right: 10px;
+                color: $black-menu;
+                font-size: 1.5em;
+            }
+        }
+
+        .cross {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 20px;
+            // padding: 17px;
+            height: 60px;
+            width: 60px;
+            background-position: center;
+            background-size: cover;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' id='cross' x='0px' y='0px' viewBox='0 0 100 100' style='enable-background:new 0 0 100 100;' %3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23FFFFFF;stroke-width:2;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cg id='XMLID_3_'%3E%3Cline id='XMLID_1_' class='st0' x1='0' y1='0' x2='100' y2='100'/%3E%3Cline id='XMLID_2_' class='st0' x1='100' y1='0' x2='0' y2='100'/%3E%3C/g%3E%3C/svg%3E");
+
+            @media screen and (min-device-width:500px) {
+                height: 30px;
+                width: 30px;
+                margin: 10px;
+            }
+
+
+        }
+
+        form {
+            width: 100%;
+
+            .lebels {
+                .form-group {
+                    .form-control {
+                        width: 99%;
+                        font-size: 0.9em;
+                        color: $white-grey;
+                        background-color: $black-menu;
+                        padding: 0.7em 0;
+                        margin-bottom: 1em;
+                        border: solid 1px $golden-darken;
+
+                        @media screen and (min-device-width:500px) {
+
+                            font-size: 1.1em;
+                        }
+
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            color: $golden-darken;
+                        }
+                    }
+                }
+            }
+
+            .send {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+
+
+                .submit {
+                    width: 70%;
+                    font-size: 1.1em;
+                    color: $black-menu;
+                    background-color: $golden-darken;
+                    padding: 5px 10px;
+                    border: none;
+
+                    @media screen and (min-device-width:500px) {
+                        width: 200px;
+                        font-size: 1.2em;
+                    }
+
+                    &:hover{
+                        background-color:  $white-grey;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
