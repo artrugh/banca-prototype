@@ -5,9 +5,11 @@ export const Cart = (data, pictures) => {
   let totalQuantity = 0;
 
   data.map((product, i) => {
-
+    // sum the total price od the cart
     let totalProductPrice = product.price * product.quantity;
+    // sum the total price for each product
     totalPrice += totalProductPrice;
+    // sum quantity of products
     totalQuantity += product.quantity;
 
     content +=

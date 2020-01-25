@@ -7,6 +7,7 @@ const manageButtons = () => {
 
     //return the content to opacity 1
     content.classList.remove("transparent");
+
     // return the bottoms to opacity 1
     signup.classList.remove("transparent");
     login.classList.remove("transparent");
@@ -16,6 +17,7 @@ const manageButtons = () => {
 
     // the menu opacity 1 again
     menu.className = "visible";
+    
     // we sure the menu Icon is setted in the correct position
     const menuIcon = document.querySelectorAll(".bar");
     [...menuIcon].map(bar => bar.classList.remove("diagonal"));
